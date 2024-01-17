@@ -1,16 +1,12 @@
+import { CarList } from "./CarList";
+import { SearchBar } from "./SearchBar";
+import carItems from '../car-items.json';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <SearchBar />
+      <CarList items={carItems} />
     </div>
   );
 };
