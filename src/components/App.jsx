@@ -1,5 +1,5 @@
-import { CarList } from "./CarList";
-import { SearchBar } from "./SearchBar";
+import { CarList } from "./CarList/CarList";
+import { SearchBar } from "./SearchBar/SearchBar";
 import carItems from '../car-items.json';
 
 export const App = () => {
