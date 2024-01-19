@@ -1,10 +1,10 @@
 // import { Image } from 'cloudinary-react';
 
-import { MainText, Price, Model } from "./CarCard.styled"
+import { MainText, Price, Model, Wrapper } from "./CarCard.styled"
 
 export const CarCard = ({ car: { make, model, year, rentalPrice, address, rentalCompany, type, id, functionalities, img } }) => {
     return (
-        <div>
+        <Wrapper>
             {/* <Image src={img} alt="car"></Image> */}
             <MainText>
                 <p>{make}</p>
@@ -21,6 +21,6 @@ export const CarCard = ({ car: { make, model, year, rentalPrice, address, rental
                 <p>{id}</p>
                 {/* <p>{functionalities[0]}</p> */}
             </div>
-        </div>
+        </Wrapper>
     )
 }

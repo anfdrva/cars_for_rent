@@ -1,12 +1,15 @@
 import { CarList } from "./CarList/CarList";
 import { SearchBar } from "./SearchBar/SearchBar";
 import carItems from '../car-items.json';
+import { GlobalStyle } from "./GlobalStyle";
+import { Layout } from "./Layout";
 
 export const App = () => {
   return (
-    <div>
+    <Layout>
       <SearchBar />
       <CarList items={carItems} />
-    </div>
+      <GlobalStyle/>
+    </Layout>
   );
 };
