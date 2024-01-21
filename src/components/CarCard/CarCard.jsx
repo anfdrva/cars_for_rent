@@ -1,6 +1,6 @@
 import { MainText, Price, Model, Wrapper, CarPhoto, DetailInfo, DetailInfoText, ButtonLearnMore } from "./CarCard.styled"
 
-export const CarCard = ({ car: { make, model, year, rentalPrice, address, rentalCompany, type, id, functionalities, img } }) => {
+export const CarCard = ({ car: { make, model, year, rentalPrice, address, rentalCompany, type, id, functionalities, img }, onLearnMore }) => {
     return (
         <Wrapper>
             <CarPhoto src={img} alt="car" />
@@ -20,7 +20,7 @@ export const CarCard = ({ car: { make, model, year, rentalPrice, address, rental
                 <DetailInfoText>{id}</DetailInfoText>
                 {/* <p>{functionalities[0]}</p> */}
             </DetailInfo>
-            <ButtonLearnMore type="button">Learn More</ButtonLearnMore>
+            <ButtonLearnMore type="button" onClick={()=>onLearnMore(id)}>Learn More</ButtonLearnMore>
         </Wrapper>
     )
 }
